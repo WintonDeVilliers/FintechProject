@@ -1,4 +1,7 @@
-package FinTech;
+package FinTechFirstDraft;
+
+import FinTech.BankStatementCSVParser;
+import FinTech.BankTransaction;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,7 +20,7 @@ public class BankTransactionalAnalyzerSRP {
      */
     public static void main(final String...args) throws IOException {
 
-        final BankStatementCSVParserREFAC bankStatementParser = new BankStatementCSVParserREFAC();
+        final BankStatementCSVParser bankStatementParser = new BankStatementCSVParser();
 
         final String fileName = args[0];
         final Path path = Paths.get(RESOURCES + fileName);

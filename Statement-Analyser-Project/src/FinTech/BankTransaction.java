@@ -3,6 +3,12 @@ package FinTech;
 import java.time.LocalDate;
 import java.util.Objects;
 
+/**
+ * The BankTransaction class can be used by different parts of our application adn those parts will have a common
+ * understanding of what a bank statement is
+ *
+ *
+ */
 public class BankTransaction {
     private final LocalDate date;
     private final double amount;

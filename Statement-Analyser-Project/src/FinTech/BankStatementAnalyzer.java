@@ -6,18 +6,16 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-public class BankStatementAnalyzerSRPplus {
+public class BankStatementAnalyzer {
 
         private static final String RESOURCES = "/Users/winstondevilliers/bank-statement-simple.csv";
         /**
-         * @param args
          * @throws IOException
          */
-        public static void main(final String...args) throws IOException {
+        public static void analyse (final String fileName, final BankStatementParser bankStatementParser) throws IOException {
 
-            final BankStatementCSVParserREFAC bankStatementParser = new BankStatementCSVParserREFAC();
-
-            final String fileName = args[0];
+//            final BankStatementCSVParser bankStatementParser = new BankStatementCSVParser();
+//            final String fileName = args[0];
             final Path path = Paths.get(RESOURCES + fileName);
             final List<String> lines = Files.readAllLines(path);
 
